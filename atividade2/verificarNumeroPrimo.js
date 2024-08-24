@@ -1,11 +1,11 @@
 function verificarNumeroPrimo(n) {
-    if (n <= 1) return false; // Números menores ou iguais a 1 não são primos
-    if (n === 2) return true; // 2 é o único número primo par
+    if (n <= 1) return false; 
+    if (n === 2) return true; 
 
-    // Números pares maiores que 2 não são primos
+    
     if (n % 2 === 0) return false;
 
-    // Verifica divisibilidade até a raiz quadrada de "n"
+    
     for (let i = 3; i * i <= n; i += 2) {
         if (n % i === 0) {
             return false;
@@ -15,7 +15,7 @@ function verificarNumeroPrimo(n) {
     return true;
 }
 
-// Casos de teste
+
 console.log(verificarNumeroPrimo(0));       // false
 console.log(verificarNumeroPrimo(1));       // false
 console.log(verificarNumeroPrimo(2));       // true
