@@ -1,0 +1,10 @@
+<% layout('layout') %>
+<h1>Nova Mensagem</h1>
+<form action="/messages/create" method="POST">
+  <label for="title">Título:</label>
+  <input type="text" id="title" name="title" required>
+  <label for="content">Conteúdo:</label>
+  <textarea id="content" name="content" required></textarea>
+  <button type="submit">Publicar</button>
+</form>
+<a href="/messages/mural">Voltar ao mural</a>

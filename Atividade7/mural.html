@@ -1,0 +1,10 @@
+<% layout('layout') %>
+<h1>Mural de Mensagens</h1>
+<ul>
+  <% messages.forEach(message => { %>
+    <li>
+      <a href="/messages/<%= message._id %>"><%= message.title %></a> por <%= message.user.username %>
+    </li>
+  <% }) %>
+</ul>
+<a href="/messages/create">Criar nova mensagem</a>
